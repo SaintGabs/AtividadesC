@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+	int salario, prestacao;
+	printf("Salario");
+	scanf_s("%d", &salario);
+	printf("Prestacao");
+	scanf_s("%d", &prestacao);
+	if (prestacao > (salario * 0.2)) {
+		printf("Empretimo não concedido");
+	}
+	else {
+		printf("Emprestimo concedido");
+	}
+}
+

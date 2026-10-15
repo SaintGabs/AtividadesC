@@ -1,0 +1,1 @@
+Professor,quando eu utilizo apenas o scanf no visual studio da erro de compilação e ele próprio recomenda usar scanf_s

@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main(){
+    int num, sum = 0 ,count = 0 ;
+    float media;
+
+    do {
+        
+        printf("digite um numero impar: ");
+        scanf("%d", &num);
+        if (num % 2 != 0){
+            sum += num;
+            count ++;   
+        }
+        else {
+            printf("numero par, digite novamente\n");
+        }
+
+    } while (num != 0);
+        if (count > 0) {
+        media = (float) sum / count;
+        printf("media: %.2f\n", media);
+        }
+        else {
+            printf("nenhum numero impar foi digitado\n");
+        }
+    return 0;
+}

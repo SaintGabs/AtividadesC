@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main()
+{
+    int aprovados=0,reprovados=0, recuperacao=0,counter=0;
+    float soma=0, nota;
+    do{
+    printf("Nota aluno\n");
+    scanf("%f", &nota);
+    
+    if (nota>= 7 ){
+    printf("Aprovado\n");
+    aprovados++;}
+
+    
+    else if (nota>= 5){
+        printf("Recuperação\n");
+        recuperacao++;
+    }
+    
+    else if (nota>=0){
+    printf("Reprovado\n");
+    reprovados++;}
+    
+    else if (nota<-1){
+    printf("Nota invalida\n");
+    counter--;
+    soma-=nota;
+    }
+    
+    if (nota==-1){
+        counter--;
+        soma-=nota;
+    }
+    
+
+soma+=nota;
+counter++;
+    
+}while(nota!=-1);
+printf("----- RESULTADO -----");
+printf("\nAprovados: %d", aprovados);
+printf("\nRecuperacao: %d", recuperacao);
+printf("\nReprovados: %d", reprovados);
+printf("\nMedia geral: %.2f", soma/counter);
+    return 0;
+}
